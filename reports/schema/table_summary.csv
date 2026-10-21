@@ -1,0 +1,9 @@
+table,rows,cols,grain_tested,grain_duplicate_rows,full_row_duplicates,cols_with_missing,cols_>50%_missing,text_cols
+application_train,307511,122,SK_ID_CURR,0,0,67,41,16
+application_test,48744,121,SK_ID_CURR,0,0,64,29,16
+bureau,1716428,17,SK_ID_BUREAU,0,0,7,2,3
+bureau_balance,27299925,3,SK_ID_BUREAU + MONTHS_BALANCE,0,0,0,0,1
+previous_application,1670214,37,SK_ID_PREV,0,0,16,4,16
+POS_CASH_balance,10001358,8,SK_ID_PREV + MONTHS_BALANCE,0,0,2,0,1
+credit_card_balance,3840312,23,SK_ID_PREV + MONTHS_BALANCE,0,0,9,0,1
+installments_payments,13605401,8,SK_ID_PREV + NUM_INSTALMENT_VERSION + NUM_INSTALMENT_NUMBER,653483,0,2,0,0

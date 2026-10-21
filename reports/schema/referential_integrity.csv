@@ -1,0 +1,10 @@
+child,fk,parent,child_keys,orphan_keys_pct,parents_with_children_pct,rows_per_parent_median,rows_per_parent_max,train_coverage_pct,test_coverage_pct
+bureau,SK_ID_CURR,application,305811,0.0,85.84,4.0,116.0,85.69,86.82
+bureau_balance,SK_ID_BUREAU,bureau,817395,5.27,45.11,26.0,97.0,,
+previous_application,SK_ID_CURR,application,338857,0.0,95.12,4.0,77.0,94.65,98.06
+POS_CASH_balance,SK_ID_CURR,application,337252,0.0,94.67,22.0,295.0,94.12,98.08
+POS_CASH_balance,SK_ID_PREV,previous_application,936325,4.0,53.82,10.0,96.0,,
+credit_card_balance,SK_ID_CURR,application,103558,0.0,29.07,22.0,192.0,28.26,34.16
+credit_card_balance,SK_ID_PREV,previous_application,104307,10.9,5.56,21.0,96.0,,
+installments_payments,SK_ID_CURR,application,339587,0.0,95.32,25.0,372.0,94.84,98.36
+installments_payments,SK_ID_PREV,previous_application,997752,3.89,57.41,10.0,293.0,,

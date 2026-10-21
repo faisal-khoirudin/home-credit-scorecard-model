@@ -1,0 +1,208 @@
+{
+  "table": "bureau",
+  "n_rows": 1716428,
+  "n_cols": 17,
+  "dtype_counts": {
+    "int64": 6,
+    "text": 3,
+    "float64": 8
+  },
+  "dtypes": {
+    "SK_ID_CURR": "int64",
+    "SK_ID_BUREAU": "int64",
+    "CREDIT_ACTIVE": "text",
+    "CREDIT_CURRENCY": "text",
+    "DAYS_CREDIT": "int64",
+    "CREDIT_DAY_OVERDUE": "int64",
+    "DAYS_CREDIT_ENDDATE": "float64",
+    "DAYS_ENDDATE_FACT": "float64",
+    "AMT_CREDIT_MAX_OVERDUE": "float64",
+    "CNT_CREDIT_PROLONG": "int64",
+    "AMT_CREDIT_SUM": "float64",
+    "AMT_CREDIT_SUM_DEBT": "float64",
+    "AMT_CREDIT_SUM_LIMIT": "float64",
+    "AMT_CREDIT_SUM_OVERDUE": "float64",
+    "CREDIT_TYPE": "text",
+    "DAYS_CREDIT_UPDATE": "int64",
+    "AMT_ANNUITY": "float64"
+  },
+  "full_row_duplicates": 0,
+  "grain_tested": [
+    "SK_ID_BUREAU"
+  ],
+  "grain_duplicate_rows": 0,
+  "missing": {
+    "AMT_ANNUITY": {
+      "n": 1226791,
+      "pct": 71.47
+    },
+    "AMT_CREDIT_MAX_OVERDUE": {
+      "n": 1124488,
+      "pct": 65.51
+    },
+    "DAYS_ENDDATE_FACT": {
+      "n": 633653,
+      "pct": 36.92
+    },
+    "AMT_CREDIT_SUM_LIMIT": {
+      "n": 591780,
+      "pct": 34.48
+    },
+    "AMT_CREDIT_SUM_DEBT": {
+      "n": 257669,
+      "pct": 15.01
+    },
+    "DAYS_CREDIT_ENDDATE": {
+      "n": 105553,
+      "pct": 6.15
+    },
+    "AMT_CREDIT_SUM": {
+      "n": 13,
+      "pct": 0.0
+    }
+  },
+  "categorical_cardinality": {
+    "CREDIT_ACTIVE": {
+      "n_unique": 4,
+      "top": [
+        [
+          "Closed",
+          1079273
+        ],
+        [
+          "Active",
+          630607
+        ],
+        [
+          "Sold",
+          6527
+        ],
+        [
+          "Bad debt",
+          21
+        ]
+      ]
+    },
+    "CREDIT_CURRENCY": {
+      "n_unique": 4,
+      "top": [
+        [
+          "currency 1",
+          1715020
+        ],
+        [
+          "currency 2",
+          1224
+        ],
+        [
+          "currency 3",
+          174
+        ],
+        [
+          "currency 4",
+          10
+        ]
+      ]
+    },
+    "CREDIT_TYPE": {
+      "n_unique": 15,
+      "top": [
+        [
+          "Consumer credit",
+          1251615
+        ],
+        [
+          "Credit card",
+          402195
+        ],
+        [
+          "Car loan",
+          27690
+        ],
+        [
+          "Mortgage",
+          18391
+        ],
+        [
+          "Microloan",
+          12413
+        ]
+      ]
+    }
+  },
+  "numeric_range": {
+    "DAYS_CREDIT": {
+      "min": -2922.0,
+      "max": 0.0,
+      "n_negative": 1716403
+    },
+    "CREDIT_DAY_OVERDUE": {
+      "min": 0.0,
+      "max": 2792.0,
+      "n_negative": 0
+    },
+    "DAYS_CREDIT_ENDDATE": {
+      "min": -42060.0,
+      "max": 31199.0,
+      "n_negative": 1007389
+    },
+    "DAYS_ENDDATE_FACT": {
+      "min": -42023.0,
+      "max": 0.0,
+      "n_negative": 1082711
+    },
+    "AMT_CREDIT_MAX_OVERDUE": {
+      "min": 0.0,
+      "max": 115987185.0,
+      "n_negative": 0
+    },
+    "CNT_CREDIT_PROLONG": {
+      "min": 0.0,
+      "max": 9.0,
+      "n_negative": 0
+    },
+    "AMT_CREDIT_SUM": {
+      "min": 0.0,
+      "max": 585000000.0,
+      "n_negative": 0
+    },
+    "AMT_CREDIT_SUM_DEBT": {
+      "min": -4705600.32,
+      "max": 170100000.0,
+      "n_negative": 8418
+    },
+    "AMT_CREDIT_SUM_LIMIT": {
+      "min": -586406.115,
+      "max": 4705600.32,
+      "n_negative": 351
+    },
+    "AMT_CREDIT_SUM_OVERDUE": {
+      "min": 0.0,
+      "max": 3756681.0,
+      "n_negative": 0
+    },
+    "DAYS_CREDIT_UPDATE": {
+      "min": -41947.0,
+      "max": 372.0,
+      "n_negative": 1715806
+    },
+    "AMT_ANNUITY": {
+      "min": 0.0,
+      "max": 118453423.5,
+      "n_negative": 0
+    }
+  },
+  "days_sentinel_365243": {},
+  "children_per_parent": {
+    "SK_ID_CURR": {
+      "count": 305811.0,
+      "mean": 5.61,
+      "std": 4.43,
+      "min": 1.0,
+      "25%": 2.0,
+      "50%": 4.0,
+      "75%": 8.0,
+      "max": 116.0
+    }
+  }
+}

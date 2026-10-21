@@ -1,0 +1,114 @@
+{
+  "table": "POS_CASH_balance",
+  "n_rows": 10001358,
+  "n_cols": 8,
+  "dtype_counts": {
+    "int64": 5,
+    "float64": 2,
+    "text": 1
+  },
+  "dtypes": {
+    "SK_ID_PREV": "int64",
+    "SK_ID_CURR": "int64",
+    "MONTHS_BALANCE": "int64",
+    "CNT_INSTALMENT": "float64",
+    "CNT_INSTALMENT_FUTURE": "float64",
+    "NAME_CONTRACT_STATUS": "text",
+    "SK_DPD": "int64",
+    "SK_DPD_DEF": "int64"
+  },
+  "full_row_duplicates": 0,
+  "grain_tested": [
+    "SK_ID_PREV",
+    "MONTHS_BALANCE"
+  ],
+  "grain_duplicate_rows": 0,
+  "missing": {
+    "CNT_INSTALMENT_FUTURE": {
+      "n": 26087,
+      "pct": 0.26
+    },
+    "CNT_INSTALMENT": {
+      "n": 26071,
+      "pct": 0.26
+    }
+  },
+  "categorical_cardinality": {
+    "NAME_CONTRACT_STATUS": {
+      "n_unique": 9,
+      "top": [
+        [
+          "Active",
+          9151119
+        ],
+        [
+          "Completed",
+          744883
+        ],
+        [
+          "Signed",
+          87260
+        ],
+        [
+          "Demand",
+          7065
+        ],
+        [
+          "Returned to the store",
+          5461
+        ]
+      ]
+    }
+  },
+  "numeric_range": {
+    "MONTHS_BALANCE": {
+      "min": -96.0,
+      "max": -1.0,
+      "n_negative": 10001358
+    },
+    "CNT_INSTALMENT": {
+      "min": 1.0,
+      "max": 92.0,
+      "n_negative": 0
+    },
+    "CNT_INSTALMENT_FUTURE": {
+      "min": 0.0,
+      "max": 85.0,
+      "n_negative": 0
+    },
+    "SK_DPD": {
+      "min": 0.0,
+      "max": 4231.0,
+      "n_negative": 0
+    },
+    "SK_DPD_DEF": {
+      "min": 0.0,
+      "max": 3595.0,
+      "n_negative": 0
+    }
+  },
+  "days_sentinel_365243": {},
+  "children_per_parent": {
+    "SK_ID_CURR": {
+      "count": 337252.0,
+      "mean": 29.66,
+      "std": 24.53,
+      "min": 1.0,
+      "25%": 12.0,
+      "50%": 22.0,
+      "75%": 39.0,
+      "max": 295.0
+    },
+    "SK_ID_PREV": {
+      "count": 936325.0,
+      "mean": 10.68,
+      "std": 6.96,
+      "min": 1.0,
+      "25%": 7.0,
+      "50%": 10.0,
+      "75%": 13.0,
+      "max": 96.0
+    }
+  },
+  "SK_ID_PREV_mapped_to_multiple_SK_ID_CURR": 0
+}

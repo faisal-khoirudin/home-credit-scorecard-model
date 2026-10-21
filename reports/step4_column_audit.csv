@@ -1,0 +1,60 @@
+column,reason
+CODE_GENDER,excluded by policy (sensitive attribute; kept for fairness analysis)
+BB_N_MONTHS_KNOWN,excluded by default (drift risk): monthly bureau status available for 35% of train vs 99.98% of scoring applicants with bureau records; tested in Step 9
+BB_WORST_STATUS,excluded by default (drift risk): monthly bureau status available for 35% of train vs 99.98% of scoring applicants with bureau records; tested in Step 9
+BB_WORST_STATUS_12M,excluded by default (drift risk): monthly bureau status available for 35% of train vs 99.98% of scoring applicants with bureau records; tested in Step 9
+BB_SHARE_MONTHS_DPD,excluded by default (drift risk): monthly bureau status available for 35% of train vs 99.98% of scoring applicants with bureau records; tested in Step 9
+HAS_BUREAU_BALANCE,excluded by default (drift risk): monthly bureau status available for 35% of train vs 99.98% of scoring applicants with bureau records; tested in Step 9
+BUR_ACTIVE_ANNUITY_SUM,excluded by default (drift risk): bureau annuity missing for 75.9% of active credits in train vs 22.7% in scoring (reporting drift); tested in Step 9
+X_TOTAL_ANNUITY_TO_INCOME,excluded by default (drift risk): bureau annuity missing for 75.9% of active credits in train vs 22.7% in scoring (reporting drift); built on BUR_ACTIVE_ANNUITY_SUM; tested in Step 9
+APARTMENTS_MODE,building triplet: AVG version kept
+BASEMENTAREA_MODE,building triplet: AVG version kept
+YEARS_BEGINEXPLUATATION_MODE,building triplet: AVG version kept
+YEARS_BUILD_MODE,building triplet: AVG version kept
+COMMONAREA_MODE,building triplet: AVG version kept
+ELEVATORS_MODE,building triplet: AVG version kept
+ENTRANCES_MODE,building triplet: AVG version kept
+FLOORSMAX_MODE,building triplet: AVG version kept
+FLOORSMIN_MODE,building triplet: AVG version kept
+LANDAREA_MODE,building triplet: AVG version kept
+LIVINGAPARTMENTS_MODE,building triplet: AVG version kept
+LIVINGAREA_MODE,building triplet: AVG version kept
+NONLIVINGAPARTMENTS_MODE,building triplet: AVG version kept
+NONLIVINGAREA_MODE,building triplet: AVG version kept
+APARTMENTS_MEDI,building triplet: AVG version kept
+BASEMENTAREA_MEDI,building triplet: AVG version kept
+YEARS_BEGINEXPLUATATION_MEDI,building triplet: AVG version kept
+YEARS_BUILD_MEDI,building triplet: AVG version kept
+COMMONAREA_MEDI,building triplet: AVG version kept
+ELEVATORS_MEDI,building triplet: AVG version kept
+ENTRANCES_MEDI,building triplet: AVG version kept
+FLOORSMAX_MEDI,building triplet: AVG version kept
+FLOORSMIN_MEDI,building triplet: AVG version kept
+LANDAREA_MEDI,building triplet: AVG version kept
+LIVINGAPARTMENTS_MEDI,building triplet: AVG version kept
+LIVINGAREA_MEDI,building triplet: AVG version kept
+NONLIVINGAPARTMENTS_MEDI,building triplet: AVG version kept
+NONLIVINGAREA_MEDI,building triplet: AVG version kept
+FLAG_MOBIL,near-constant: 1 minority cases < 30
+FLAG_DOCUMENT_2,near-constant: 11 minority cases < 30
+FLAG_DOCUMENT_4,near-constant: 22 minority cases < 30
+FLAG_DOCUMENT_10,near-constant: 4 minority cases < 30
+FLAG_DOCUMENT_12,near-constant: 1 minority cases < 30
+BUR_N_BAD_DEBT,near-constant: 16 minority cases < 30
+DAYS_BIRTH,LR only: |rho|=1.000 with APP_AGE_YEARS; identical ranking power; kept the interpretable engineered unit
+DAYS_EMPLOYED,LR only: |rho|=1.000 with APP_EMPLOYED_YEARS; identical ranking power; kept the interpretable engineered unit
+BUR_N_OVERDUE_NOW,LR only: |rho|=1.000 with BUR_MAX_DAYS_OVERDUE_NOW; kept higher dev AUC (0.5070 vs 0.5055)
+OBS_60_CNT_SOCIAL_CIRCLE,LR only: |rho|=0.998 with OBS_30_CNT_SOCIAL_CIRCLE; kept higher dev AUC (0.5105 vs 0.5102)
+POS_MAX_DPD_DEF,LR only: |rho|=0.994 with POS_SHARE_MONTHS_DPD_DEF; kept higher dev AUC (0.5258 vs 0.5252)
+CC_MAX_DPD,LR only: |rho|=0.992 with CC_SHARE_MONTHS_DPD; kept higher dev AUC (0.5010 vs 0.5006)
+POS_MAX_DPD,LR only: |rho|=0.991 with POS_SHARE_MONTHS_DPD; kept higher dev AUC (0.5256 vs 0.5239)
+YEARS_BUILD_AVG,LR only: |rho|=0.987 with YEARS_BEGINEXPLUATATION_AVG; kept higher dev AUC (0.5297 vs 0.5257)
+AMT_CREDIT,LR only: |rho|=0.985 with AMT_GOODS_PRICE; kept higher dev AUC (0.5337 vs 0.5193)
+PREV_N_REFUSED,LR only: |rho|=0.977 with PREV_REFUSAL_RATE; kept higher dev AUC (0.5611 vs 0.5569)
+INST_SHARE_LATE_1Y,LR only: |rho|=0.974 with INST_MAX_DAYS_LATE_1Y; kept higher dev AUC (0.5787 vs 0.5756)
+LIVINGAPARTMENTS_AVG,LR only: |rho|=0.974 with APARTMENTS_AVG; kept higher dev AUC (0.5395 vs 0.5346)
+INST_MAX_DAYS_LATE,LR only: |rho|=0.971 with INST_MEAN_DAYS_LATE; kept higher dev AUC (0.5601 vs 0.5508)
+APP_EMPLOYED_TO_AGE,LR only: |rho|=0.966 with APP_EMPLOYED_YEARS; kept higher dev AUC (0.5823 vs 0.5693)
+INST_MEAN_DAYS_LATE,LR only: |rho|=0.960 with INST_SHARE_LATE; kept higher dev AUC (0.5656 vs 0.5601)
+BUR_ACTIVE_DEBT_SUM,LR only: |rho|=0.955 with X_BUR_DEBT_TO_INCOME; kept higher dev AUC (0.5420 vs 0.5353)
+REGION_RATING_CLIENT,LR only: |rho|=0.951 with REGION_RATING_CLIENT_W_CITY; kept higher dev AUC (0.5495 vs 0.5481)

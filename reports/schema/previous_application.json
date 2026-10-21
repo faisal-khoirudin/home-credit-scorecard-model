@@ -1,0 +1,602 @@
+{
+  "table": "previous_application",
+  "n_rows": 1670214,
+  "n_cols": 37,
+  "dtype_counts": {
+    "int64": 6,
+    "text": 16,
+    "float64": 15
+  },
+  "dtypes": {
+    "SK_ID_PREV": "int64",
+    "SK_ID_CURR": "int64",
+    "NAME_CONTRACT_TYPE": "text",
+    "AMT_ANNUITY": "float64",
+    "AMT_APPLICATION": "float64",
+    "AMT_CREDIT": "float64",
+    "AMT_DOWN_PAYMENT": "float64",
+    "AMT_GOODS_PRICE": "float64",
+    "WEEKDAY_APPR_PROCESS_START": "text",
+    "HOUR_APPR_PROCESS_START": "int64",
+    "FLAG_LAST_APPL_PER_CONTRACT": "text",
+    "NFLAG_LAST_APPL_IN_DAY": "int64",
+    "RATE_DOWN_PAYMENT": "float64",
+    "RATE_INTEREST_PRIMARY": "float64",
+    "RATE_INTEREST_PRIVILEGED": "float64",
+    "NAME_CASH_LOAN_PURPOSE": "text",
+    "NAME_CONTRACT_STATUS": "text",
+    "DAYS_DECISION": "int64",
+    "NAME_PAYMENT_TYPE": "text",
+    "CODE_REJECT_REASON": "text",
+    "NAME_TYPE_SUITE": "text",
+    "NAME_CLIENT_TYPE": "text",
+    "NAME_GOODS_CATEGORY": "text",
+    "NAME_PORTFOLIO": "text",
+    "NAME_PRODUCT_TYPE": "text",
+    "CHANNEL_TYPE": "text",
+    "SELLERPLACE_AREA": "int64",
+    "NAME_SELLER_INDUSTRY": "text",
+    "CNT_PAYMENT": "float64",
+    "NAME_YIELD_GROUP": "text",
+    "PRODUCT_COMBINATION": "text",
+    "DAYS_FIRST_DRAWING": "float64",
+    "DAYS_FIRST_DUE": "float64",
+    "DAYS_LAST_DUE_1ST_VERSION": "float64",
+    "DAYS_LAST_DUE": "float64",
+    "DAYS_TERMINATION": "float64",
+    "NFLAG_INSURED_ON_APPROVAL": "float64"
+  },
+  "full_row_duplicates": 0,
+  "grain_tested": [
+    "SK_ID_PREV"
+  ],
+  "grain_duplicate_rows": 0,
+  "missing": {
+    "RATE_INTEREST_PRIVILEGED": {
+      "n": 1664263,
+      "pct": 99.64
+    },
+    "RATE_INTEREST_PRIMARY": {
+      "n": 1664263,
+      "pct": 99.64
+    },
+    "AMT_DOWN_PAYMENT": {
+      "n": 895844,
+      "pct": 53.64
+    },
+    "RATE_DOWN_PAYMENT": {
+      "n": 895844,
+      "pct": 53.64
+    },
+    "NAME_TYPE_SUITE": {
+      "n": 820405,
+      "pct": 49.12
+    },
+    "DAYS_TERMINATION": {
+      "n": 673065,
+      "pct": 40.3
+    },
+    "DAYS_FIRST_DRAWING": {
+      "n": 673065,
+      "pct": 40.3
+    },
+    "DAYS_FIRST_DUE": {
+      "n": 673065,
+      "pct": 40.3
+    },
+    "DAYS_LAST_DUE_1ST_VERSION": {
+      "n": 673065,
+      "pct": 40.3
+    },
+    "DAYS_LAST_DUE": {
+      "n": 673065,
+      "pct": 40.3
+    },
+    "NFLAG_INSURED_ON_APPROVAL": {
+      "n": 673065,
+      "pct": 40.3
+    },
+    "AMT_GOODS_PRICE": {
+      "n": 385515,
+      "pct": 23.08
+    },
+    "AMT_ANNUITY": {
+      "n": 372235,
+      "pct": 22.29
+    },
+    "CNT_PAYMENT": {
+      "n": 372230,
+      "pct": 22.29
+    },
+    "PRODUCT_COMBINATION": {
+      "n": 346,
+      "pct": 0.02
+    },
+    "AMT_CREDIT": {
+      "n": 1,
+      "pct": 0.0
+    }
+  },
+  "categorical_cardinality": {
+    "NAME_CONTRACT_TYPE": {
+      "n_unique": 4,
+      "top": [
+        [
+          "Cash loans",
+          747553
+        ],
+        [
+          "Consumer loans",
+          729151
+        ],
+        [
+          "Revolving loans",
+          193164
+        ],
+        [
+          "XNA",
+          346
+        ]
+      ]
+    },
+    "WEEKDAY_APPR_PROCESS_START": {
+      "n_unique": 7,
+      "top": [
+        [
+          "TUESDAY",
+          255118
+        ],
+        [
+          "WEDNESDAY",
+          255010
+        ],
+        [
+          "MONDAY",
+          253557
+        ],
+        [
+          "FRIDAY",
+          252048
+        ],
+        [
+          "THURSDAY",
+          249099
+        ]
+      ]
+    },
+    "FLAG_LAST_APPL_PER_CONTRACT": {
+      "n_unique": 2,
+      "top": [
+        [
+          "Y",
+          1661739
+        ],
+        [
+          "N",
+          8475
+        ]
+      ]
+    },
+    "NAME_CASH_LOAN_PURPOSE": {
+      "n_unique": 25,
+      "top": [
+        [
+          "XAP",
+          922661
+        ],
+        [
+          "XNA",
+          677918
+        ],
+        [
+          "Repairs",
+          23765
+        ],
+        [
+          "Other",
+          15608
+        ],
+        [
+          "Urgent needs",
+          8412
+        ]
+      ]
+    },
+    "NAME_CONTRACT_STATUS": {
+      "n_unique": 4,
+      "top": [
+        [
+          "Approved",
+          1036781
+        ],
+        [
+          "Canceled",
+          316319
+        ],
+        [
+          "Refused",
+          290678
+        ],
+        [
+          "Unused offer",
+          26436
+        ]
+      ]
+    },
+    "NAME_PAYMENT_TYPE": {
+      "n_unique": 4,
+      "top": [
+        [
+          "Cash through the bank",
+          1033552
+        ],
+        [
+          "XNA",
+          627384
+        ],
+        [
+          "Non-cash from your account",
+          8193
+        ],
+        [
+          "Cashless from the account of the employer",
+          1085
+        ]
+      ]
+    },
+    "CODE_REJECT_REASON": {
+      "n_unique": 9,
+      "top": [
+        [
+          "XAP",
+          1353093
+        ],
+        [
+          "HC",
+          175231
+        ],
+        [
+          "LIMIT",
+          55680
+        ],
+        [
+          "SCO",
+          37467
+        ],
+        [
+          "CLIENT",
+          26436
+        ]
+      ]
+    },
+    "NAME_TYPE_SUITE": {
+      "n_unique": 7,
+      "top": [
+        [
+          "Unaccompanied",
+          508970
+        ],
+        [
+          "Family",
+          213263
+        ],
+        [
+          "Spouse, partner",
+          67069
+        ],
+        [
+          "Children",
+          31566
+        ],
+        [
+          "Other_B",
+          17624
+        ]
+      ]
+    },
+    "NAME_CLIENT_TYPE": {
+      "n_unique": 4,
+      "top": [
+        [
+          "Repeater",
+          1231261
+        ],
+        [
+          "New",
+          301363
+        ],
+        [
+          "Refreshed",
+          135649
+        ],
+        [
+          "XNA",
+          1941
+        ]
+      ]
+    },
+    "NAME_GOODS_CATEGORY": {
+      "n_unique": 28,
+      "top": [
+        [
+          "XNA",
+          950809
+        ],
+        [
+          "Mobile",
+          224708
+        ],
+        [
+          "Consumer Electronics",
+          121576
+        ],
+        [
+          "Computers",
+          105769
+        ],
+        [
+          "Audio/Video",
+          99441
+        ]
+      ]
+    },
+    "NAME_PORTFOLIO": {
+      "n_unique": 5,
+      "top": [
+        [
+          "POS",
+          691011
+        ],
+        [
+          "Cash",
+          461563
+        ],
+        [
+          "XNA",
+          372230
+        ],
+        [
+          "Cards",
+          144985
+        ],
+        [
+          "Cars",
+          425
+        ]
+      ]
+    },
+    "NAME_PRODUCT_TYPE": {
+      "n_unique": 3,
+      "top": [
+        [
+          "XNA",
+          1063666
+        ],
+        [
+          "x-sell",
+          456287
+        ],
+        [
+          "walk-in",
+          150261
+        ]
+      ]
+    },
+    "CHANNEL_TYPE": {
+      "n_unique": 8,
+      "top": [
+        [
+          "Credit and cash offices",
+          719968
+        ],
+        [
+          "Country-wide",
+          494690
+        ],
+        [
+          "Stone",
+          212083
+        ],
+        [
+          "Regional / Local",
+          108528
+        ],
+        [
+          "Contact center",
+          71297
+        ]
+      ]
+    },
+    "NAME_SELLER_INDUSTRY": {
+      "n_unique": 11,
+      "top": [
+        [
+          "XNA",
+          855720
+        ],
+        [
+          "Consumer electronics",
+          398265
+        ],
+        [
+          "Connectivity",
+          276029
+        ],
+        [
+          "Furniture",
+          57849
+        ],
+        [
+          "Construction",
+          29781
+        ]
+      ]
+    },
+    "NAME_YIELD_GROUP": {
+      "n_unique": 5,
+      "top": [
+        [
+          "XNA",
+          517215
+        ],
+        [
+          "middle",
+          385532
+        ],
+        [
+          "high",
+          353331
+        ],
+        [
+          "low_normal",
+          322095
+        ],
+        [
+          "low_action",
+          92041
+        ]
+      ]
+    },
+    "PRODUCT_COMBINATION": {
+      "n_unique": 17,
+      "top": [
+        [
+          "Cash",
+          285990
+        ],
+        [
+          "POS household with interest",
+          263622
+        ],
+        [
+          "POS mobile with interest",
+          220670
+        ],
+        [
+          "Cash X-Sell: middle",
+          143883
+        ],
+        [
+          "Cash X-Sell: low",
+          130248
+        ]
+      ]
+    }
+  },
+  "numeric_range": {
+    "AMT_ANNUITY": {
+      "min": 0.0,
+      "max": 418058.145,
+      "n_negative": 0
+    },
+    "AMT_APPLICATION": {
+      "min": 0.0,
+      "max": 6905160.0,
+      "n_negative": 0
+    },
+    "AMT_CREDIT": {
+      "min": 0.0,
+      "max": 6905160.0,
+      "n_negative": 0
+    },
+    "AMT_DOWN_PAYMENT": {
+      "min": -0.9,
+      "max": 3060045.0,
+      "n_negative": 2
+    },
+    "AMT_GOODS_PRICE": {
+      "min": 0.0,
+      "max": 6905160.0,
+      "n_negative": 0
+    },
+    "HOUR_APPR_PROCESS_START": {
+      "min": 0.0,
+      "max": 23.0,
+      "n_negative": 0
+    },
+    "NFLAG_LAST_APPL_IN_DAY": {
+      "min": 0.0,
+      "max": 1.0,
+      "n_negative": 0
+    },
+    "RATE_DOWN_PAYMENT": {
+      "min": -1.4978763414307848e-05,
+      "max": 1.0,
+      "n_negative": 2
+    },
+    "RATE_INTEREST_PRIMARY": {
+      "min": 0.0347812535418791,
+      "max": 1.0,
+      "n_negative": 0
+    },
+    "RATE_INTEREST_PRIVILEGED": {
+      "min": 0.3731501057082452,
+      "max": 1.0,
+      "n_negative": 0
+    },
+    "DAYS_DECISION": {
+      "min": -2922.0,
+      "max": -1.0,
+      "n_negative": 1670214
+    },
+    "SELLERPLACE_AREA": {
+      "min": -1.0,
+      "max": 4000000.0,
+      "n_negative": 762675
+    },
+    "CNT_PAYMENT": {
+      "min": 0.0,
+      "max": 84.0,
+      "n_negative": 0
+    },
+    "DAYS_FIRST_DRAWING": {
+      "min": -2922.0,
+      "max": 365243.0,
+      "n_negative": 62705
+    },
+    "DAYS_FIRST_DUE": {
+      "min": -2892.0,
+      "max": 365243.0,
+      "n_negative": 956504
+    },
+    "DAYS_LAST_DUE_1ST_VERSION": {
+      "min": -2801.0,
+      "max": 365243.0,
+      "n_negative": 678188
+    },
+    "DAYS_LAST_DUE": {
+      "min": -2889.0,
+      "max": 365243.0,
+      "n_negative": 785928
+    },
+    "DAYS_TERMINATION": {
+      "min": -2874.0,
+      "max": 365243.0,
+      "n_negative": 771236
+    },
+    "NFLAG_INSURED_ON_APPROVAL": {
+      "min": 0.0,
+      "max": 1.0,
+      "n_negative": 0
+    }
+  },
+  "days_sentinel_365243": {
+    "DAYS_FIRST_DRAWING": 934444,
+    "DAYS_FIRST_DUE": 40645,
+    "DAYS_LAST_DUE_1ST_VERSION": 93864,
+    "DAYS_LAST_DUE": 211221,
+    "DAYS_TERMINATION": 225913
+  },
+  "children_per_parent": {
+    "SK_ID_CURR": {
+      "count": 338857.0,
+      "mean": 4.93,
+      "std": 4.22,
+      "min": 1.0,
+      "25%": 2.0,
+      "50%": 4.0,
+      "75%": 7.0,
+      "max": 77.0
+    }
+  }
+}

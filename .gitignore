@@ -1,0 +1,13 @@
+# Provided data contain loan-level personal and financial information: never commit them
+data/
+*.csv
+*.parquet
+*.zip
+*.gz
+!reports/**/*.csv
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+
+# Trained models are fitted on personal data: never commit them
+models/

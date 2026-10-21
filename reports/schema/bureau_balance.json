@@ -1,0 +1,68 @@
+{
+  "table": "bureau_balance",
+  "n_rows": 27299925,
+  "n_cols": 3,
+  "dtype_counts": {
+    "int64": 2,
+    "text": 1
+  },
+  "dtypes": {
+    "SK_ID_BUREAU": "int64",
+    "MONTHS_BALANCE": "int64",
+    "STATUS": "text"
+  },
+  "full_row_duplicates": 0,
+  "grain_tested": [
+    "SK_ID_BUREAU",
+    "MONTHS_BALANCE"
+  ],
+  "grain_duplicate_rows": 0,
+  "missing": {},
+  "categorical_cardinality": {
+    "STATUS": {
+      "n_unique": 8,
+      "top": [
+        [
+          "C",
+          13646993
+        ],
+        [
+          "0",
+          7499507
+        ],
+        [
+          "X",
+          5810482
+        ],
+        [
+          "1",
+          242347
+        ],
+        [
+          "5",
+          62406
+        ]
+      ]
+    }
+  },
+  "numeric_range": {
+    "MONTHS_BALANCE": {
+      "min": -96.0,
+      "max": 0.0,
+      "n_negative": 26688960
+    }
+  },
+  "days_sentinel_365243": {},
+  "children_per_parent": {
+    "SK_ID_BUREAU": {
+      "count": 817395.0,
+      "mean": 33.4,
+      "std": 25.79,
+      "min": 1.0,
+      "25%": 13.0,
+      "50%": 26.0,
+      "75%": 48.0,
+      "max": 97.0
+    }
+  }
+}

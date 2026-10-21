@@ -1,0 +1,232 @@
+{
+  "table": "credit_card_balance",
+  "n_rows": 3840312,
+  "n_cols": 23,
+  "dtype_counts": {
+    "int64": 7,
+    "float64": 15,
+    "text": 1
+  },
+  "dtypes": {
+    "SK_ID_PREV": "int64",
+    "SK_ID_CURR": "int64",
+    "MONTHS_BALANCE": "int64",
+    "AMT_BALANCE": "float64",
+    "AMT_CREDIT_LIMIT_ACTUAL": "int64",
+    "AMT_DRAWINGS_ATM_CURRENT": "float64",
+    "AMT_DRAWINGS_CURRENT": "float64",
+    "AMT_DRAWINGS_OTHER_CURRENT": "float64",
+    "AMT_DRAWINGS_POS_CURRENT": "float64",
+    "AMT_INST_MIN_REGULARITY": "float64",
+    "AMT_PAYMENT_CURRENT": "float64",
+    "AMT_PAYMENT_TOTAL_CURRENT": "float64",
+    "AMT_RECEIVABLE_PRINCIPAL": "float64",
+    "AMT_RECIVABLE": "float64",
+    "AMT_TOTAL_RECEIVABLE": "float64",
+    "CNT_DRAWINGS_ATM_CURRENT": "float64",
+    "CNT_DRAWINGS_CURRENT": "int64",
+    "CNT_DRAWINGS_OTHER_CURRENT": "float64",
+    "CNT_DRAWINGS_POS_CURRENT": "float64",
+    "CNT_INSTALMENT_MATURE_CUM": "float64",
+    "NAME_CONTRACT_STATUS": "text",
+    "SK_DPD": "int64",
+    "SK_DPD_DEF": "int64"
+  },
+  "full_row_duplicates": 0,
+  "grain_tested": [
+    "SK_ID_PREV",
+    "MONTHS_BALANCE"
+  ],
+  "grain_duplicate_rows": 0,
+  "missing": {
+    "AMT_PAYMENT_CURRENT": {
+      "n": 767988,
+      "pct": 20.0
+    },
+    "CNT_DRAWINGS_POS_CURRENT": {
+      "n": 749816,
+      "pct": 19.52
+    },
+    "AMT_DRAWINGS_ATM_CURRENT": {
+      "n": 749816,
+      "pct": 19.52
+    },
+    "CNT_DRAWINGS_ATM_CURRENT": {
+      "n": 749816,
+      "pct": 19.52
+    },
+    "AMT_DRAWINGS_POS_CURRENT": {
+      "n": 749816,
+      "pct": 19.52
+    },
+    "AMT_DRAWINGS_OTHER_CURRENT": {
+      "n": 749816,
+      "pct": 19.52
+    },
+    "CNT_DRAWINGS_OTHER_CURRENT": {
+      "n": 749816,
+      "pct": 19.52
+    },
+    "CNT_INSTALMENT_MATURE_CUM": {
+      "n": 305236,
+      "pct": 7.95
+    },
+    "AMT_INST_MIN_REGULARITY": {
+      "n": 305236,
+      "pct": 7.95
+    }
+  },
+  "categorical_cardinality": {
+    "NAME_CONTRACT_STATUS": {
+      "n_unique": 7,
+      "top": [
+        [
+          "Active",
+          3698436
+        ],
+        [
+          "Completed",
+          128918
+        ],
+        [
+          "Signed",
+          11058
+        ],
+        [
+          "Demand",
+          1365
+        ],
+        [
+          "Sent proposal",
+          513
+        ]
+      ]
+    }
+  },
+  "numeric_range": {
+    "MONTHS_BALANCE": {
+      "min": -96.0,
+      "max": -1.0,
+      "n_negative": 3840312
+    },
+    "AMT_BALANCE": {
+      "min": -420250.185,
+      "max": 1505902.185,
+      "n_negative": 2345
+    },
+    "AMT_CREDIT_LIMIT_ACTUAL": {
+      "min": 0.0,
+      "max": 1350000.0,
+      "n_negative": 0
+    },
+    "AMT_DRAWINGS_ATM_CURRENT": {
+      "min": -6827.31,
+      "max": 2115000.0,
+      "n_negative": 1
+    },
+    "AMT_DRAWINGS_CURRENT": {
+      "min": -6211.62,
+      "max": 2287098.315,
+      "n_negative": 3
+    },
+    "AMT_DRAWINGS_OTHER_CURRENT": {
+      "min": 0.0,
+      "max": 1529847.0,
+      "n_negative": 0
+    },
+    "AMT_DRAWINGS_POS_CURRENT": {
+      "min": 0.0,
+      "max": 2239274.16,
+      "n_negative": 0
+    },
+    "AMT_INST_MIN_REGULARITY": {
+      "min": 0.0,
+      "max": 202882.005,
+      "n_negative": 0
+    },
+    "AMT_PAYMENT_CURRENT": {
+      "min": 0.0,
+      "max": 4289207.445,
+      "n_negative": 0
+    },
+    "AMT_PAYMENT_TOTAL_CURRENT": {
+      "min": 0.0,
+      "max": 4278315.69,
+      "n_negative": 0
+    },
+    "AMT_RECEIVABLE_PRINCIPAL": {
+      "min": -423305.82,
+      "max": 1472316.795,
+      "n_negative": 2428
+    },
+    "AMT_RECIVABLE": {
+      "min": -420250.185,
+      "max": 1493338.185,
+      "n_negative": 109338
+    },
+    "AMT_TOTAL_RECEIVABLE": {
+      "min": -420250.185,
+      "max": 1493338.185,
+      "n_negative": 109330
+    },
+    "CNT_DRAWINGS_ATM_CURRENT": {
+      "min": 0.0,
+      "max": 51.0,
+      "n_negative": 0
+    },
+    "CNT_DRAWINGS_CURRENT": {
+      "min": 0.0,
+      "max": 165.0,
+      "n_negative": 0
+    },
+    "CNT_DRAWINGS_OTHER_CURRENT": {
+      "min": 0.0,
+      "max": 12.0,
+      "n_negative": 0
+    },
+    "CNT_DRAWINGS_POS_CURRENT": {
+      "min": 0.0,
+      "max": 165.0,
+      "n_negative": 0
+    },
+    "CNT_INSTALMENT_MATURE_CUM": {
+      "min": 0.0,
+      "max": 120.0,
+      "n_negative": 0
+    },
+    "SK_DPD": {
+      "min": 0.0,
+      "max": 3260.0,
+      "n_negative": 0
+    },
+    "SK_DPD_DEF": {
+      "min": 0.0,
+      "max": 3260.0,
+      "n_negative": 0
+    }
+  },
+  "days_sentinel_365243": {},
+  "children_per_parent": {
+    "SK_ID_CURR": {
+      "count": 103558.0,
+      "mean": 37.08,
+      "std": 33.48,
+      "min": 1.0,
+      "25%": 10.0,
+      "50%": 22.0,
+      "75%": 75.0,
+      "max": 192.0
+    },
+    "SK_ID_PREV": {
+      "count": 104307.0,
+      "mean": 36.82,
+      "std": 33.36,
+      "min": 1.0,
+      "25%": 10.0,
+      "50%": 21.0,
+      "75%": 74.0,
+      "max": 96.0
+    }
+  },
+  "SK_ID_PREV_mapped_to_multiple_SK_ID_CURR": 0
+}

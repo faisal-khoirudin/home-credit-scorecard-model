@@ -1,0 +1,93 @@
+{
+  "table": "installments_payments",
+  "n_rows": 13605401,
+  "n_cols": 8,
+  "dtype_counts": {
+    "int64": 3,
+    "float64": 5
+  },
+  "dtypes": {
+    "SK_ID_PREV": "int64",
+    "SK_ID_CURR": "int64",
+    "NUM_INSTALMENT_VERSION": "float64",
+    "NUM_INSTALMENT_NUMBER": "int64",
+    "DAYS_INSTALMENT": "float64",
+    "DAYS_ENTRY_PAYMENT": "float64",
+    "AMT_INSTALMENT": "float64",
+    "AMT_PAYMENT": "float64"
+  },
+  "full_row_duplicates": 0,
+  "grain_tested": [
+    "SK_ID_PREV",
+    "NUM_INSTALMENT_VERSION",
+    "NUM_INSTALMENT_NUMBER"
+  ],
+  "grain_duplicate_rows": 653483,
+  "missing": {
+    "AMT_PAYMENT": {
+      "n": 2905,
+      "pct": 0.02
+    },
+    "DAYS_ENTRY_PAYMENT": {
+      "n": 2905,
+      "pct": 0.02
+    }
+  },
+  "categorical_cardinality": {},
+  "numeric_range": {
+    "NUM_INSTALMENT_VERSION": {
+      "min": 0.0,
+      "max": 178.0,
+      "n_negative": 0
+    },
+    "NUM_INSTALMENT_NUMBER": {
+      "min": 1.0,
+      "max": 277.0,
+      "n_negative": 0
+    },
+    "DAYS_INSTALMENT": {
+      "min": -2922.0,
+      "max": -1.0,
+      "n_negative": 13605401
+    },
+    "DAYS_ENTRY_PAYMENT": {
+      "min": -4921.0,
+      "max": -1.0,
+      "n_negative": 13602496
+    },
+    "AMT_INSTALMENT": {
+      "min": 0.0,
+      "max": 3771487.845,
+      "n_negative": 0
+    },
+    "AMT_PAYMENT": {
+      "min": 0.0,
+      "max": 3771487.845,
+      "n_negative": 0
+    }
+  },
+  "days_sentinel_365243": {},
+  "children_per_parent": {
+    "SK_ID_CURR": {
+      "count": 339587.0,
+      "mean": 40.06,
+      "std": 41.05,
+      "min": 1.0,
+      "25%": 12.0,
+      "50%": 25.0,
+      "75%": 51.0,
+      "max": 372.0
+    },
+    "SK_ID_PREV": {
+      "count": 997752.0,
+      "mean": 13.64,
+      "std": 17.59,
+      "min": 1.0,
+      "25%": 6.0,
+      "50%": 10.0,
+      "75%": 14.0,
+      "max": 293.0
+    }
+  },
+  "SK_ID_PREV_mapped_to_multiple_SK_ID_CURR": 0
+}

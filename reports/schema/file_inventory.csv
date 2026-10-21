@@ -1,0 +1,9 @@
+table,path_used,exists,size_mb
+application_train,application_train.csv,True,158.4
+application_test,application_test.csv,True,25.3
+bureau,bureau.csv,True,162.1
+bureau_balance,bureau_balance.csv,True,358.2
+previous_application,previous_application.csv,True,386.2
+POS_CASH_balance,POS_CASH_balance.csv,True,374.5
+credit_card_balance,credit_card_balance.csv,True,404.9
+installments_payments,installments_payments.zip,True,266.9
